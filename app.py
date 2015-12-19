@@ -70,8 +70,7 @@ def home():
                         continue
 
                 files.append({
-                    "name": name_s[0],
-                    "extension": "." + name_s[len(name_s)-1],
+                    "name": name,
                     "size": str(size) + " B",
                     "mime": mime.from_file(fullpath),
                     "fullname": urllib.quote_plus(fullpath)
@@ -99,7 +98,7 @@ def home():
                 "mime": mime.from_file(fullpath)
             })
 
-    return render_template("index.html", files=files, folders=dirs, meta=meta)
+    return render_template("index.html", files=sorted(files, key=lambda k: k["name"].lower()), folders=dirs, meta=meta)
 
 @app.route("/download/<filename>")
 def download(filename):
