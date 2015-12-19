@@ -18,8 +18,9 @@ The installation is pretty simple!
 - Download and install [Heroku Toolbelt](https://toolbelt.heroku.com/)
 - ```heroku login``` to log-in to Heroku
 - ```heroku create [name]``` to create a new heroku app (replace name with something, omit brackets)
-- ```heroku ps:scale web=1``` to create one (free) Heroku dyno
 - ```git push heroku master``` to deploy
+- ```heroku ps:scale web=1``` to create one (free) Heroku dyno
+- Profit!
 
 ## License?
 This script is published under the **[Do Whatever You Feel Like, I Don't Fucking Care license](https://github.com/JacobCZ/DWYFLIDFC)**. That means you can literally do anything you fucking want. Fork it, modify it, rewrite it, sell it... I don't care!
