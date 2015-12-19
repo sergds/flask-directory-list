@@ -105,7 +105,7 @@ def download(filename):
     filename = urllib.unquote(filename)
     if os.path.isfile(filename):
         if os.path.dirname(filename) == base_directory.rstrip("/"):
-            return send_file(filename)
+            return send_file(filename, as_attachment=True)
         else:
             return render_template("no_permission.html")
     else:
