@@ -2,6 +2,8 @@
 A simple script that will list the contents of a directory it is pointed to in the config and allow you to download the files easily.
 Best run with *gunicorn* and Heroku-ready.
 
+Check out the demo [here](https://python-dirlist.herokuapp.com/)!
+
 ## How to install?
 The installation is pretty simple!
 . Make sure you are running Linux or OS X. Windows may work but is not supported!
